@@ -1,4 +1,6 @@
-with open('test1.txt') as in_file:
-    for string in in_file:
-        for sumbol in string:
-            print(sumbol)
+def distance(file='test1.txt'):
+    with open(file) as input_data:
+        return (72 - 60)*int(input_data.read())
+
+
+print(distance())
